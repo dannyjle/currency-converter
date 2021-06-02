@@ -22,20 +22,26 @@ export function App() {
   return (
     <>
       <header>
-        <h1>$Exchange Rate Calculator$</h1>
+        <h2>$¢€£¥₩₽₹¤₱₦ƒ₮৲৳₨௹฿៛₪₫₭₲₴₵﷼≋₿ŁÐ₳</h2>
+        <h1> Exchange Rate Calculator </h1>
+        <h2>$¢€£¥₩₽₹¤₱₦ƒ₮৲৳₨௹฿៛₪₫₭₲₴₵﷼≋₿ŁÐ₳</h2>
       </header>
       <main>
         <div className="exchange">
           <form>
-            <input type="number" placeholder="0.00" />
+            <input
+              type="number"
+              onChange={(event) => setAmount(event.target.value)}
+              value={amount}
+              min="0"
+            />
           </form>
-          <button>Calculate</button>
         </div>
         <ul>
           {Object.entries(currency).map(([countryCode, countryValue]) => {
             return (
               <li>
-                {countryCode}: {countryValue}
+                {countryCode}: {(countryValue * amount * 0.82).toFixed(2)}
               </li>
             )
           })}
