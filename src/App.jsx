@@ -23,7 +23,7 @@ export function App() {
     <>
       <header>
         <h2>$¢€£¥₩₽₹¤₱₦ƒ₮৲৳₨௹฿៛₪₫₭₲₴₵﷼≋₿ŁÐ₳</h2>
-        <h1> Exchange Rate Calculator </h1>
+        <h1> Exchange Rate Calculator! </h1>
         <h2>$¢€£¥₩₽₹¤₱₦ƒ₮৲৳₨௹฿៛₪₫₭₲₴₵﷼≋₿ŁÐ₳</h2>
       </header>
       <main>
